@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="couchbase"
+           fetch="git://github.com/couchbase/"
+           review="review.membase.org" />
+  <remote  name="couchbaselabs"
+           fetch="git://github.com/bcui6611/"
+           review="review.membase.org" />
+		   
+  <default revision="master" remote="couchbase" />
+  
+  <project path="couchbase-pythyon-client" name="couchbase-python-client"
+           revision="master" />
+
+  <project path="couchbase-examples" name="couchbase-examples"
+           remote="couchbaselabs"
+           revision="master" />
+</manifest>
