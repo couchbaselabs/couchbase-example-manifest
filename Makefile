@@ -1,14 +1,17 @@
 TOPDIR := $(shell pwd)
 BUILD_DIR := $(TOPDIR)/build
 
-all:
+all: manifest build
 
 manifest:
 	$(TOPDIR)/fetch-manifest.rb default.xml
 
 setup:
-	(cd ocuchbase-python-client \
-	&& setup.py install)
+	(cd couchbase-pythyon-client \
+	&& ./setup.py install)
+
+build:
+	$(TOPDIR)/genexe.rb couchbase-examples
 
 test:
 	(cd couchbase-examples \
