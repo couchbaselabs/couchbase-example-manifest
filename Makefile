@@ -7,7 +7,7 @@ manifest:
 	$(TOPDIR)/fetch-manifest.rb default.xml
 
 setup:
-	(cd couchbase-pythyon-client \
+	(cd couchbase-python-client \
 	&& ./setup.py install)
 
 build:

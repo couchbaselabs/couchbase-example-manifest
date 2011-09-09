@@ -8,7 +8,7 @@
            review="review.membase.org" />
   <default revision="master" remote="couchbase" />
 
-  <project path="couchbase-pythyon-client" name="couchbase-python-client"
+  <project path="couchbase-python-client" name="couchbase-python-client"
            revision="master" />
   <project path="couchbase-examples" name="couchbase-examples"
            remote="couchbaselabs"
